@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBRC - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Logo/Logo -fav.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <section class="navBar">
+            <div id="navLogo">
+                <img src="./Logo/Logo -fav.png" alt="Train Logo">
+                <h1>Private Bullet Railway Corporation <br> ( P B R C ) </h1>
+            </div>
+
+            <div id="navlist">
+                <ul>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="">My Bookings</a></li>
+                    <li><a href="">Other Services</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="" id="barContainer"><span></span><span></span><span></span></a>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </nav>
+
+    <main>
+        <section class="content">
+            <div id="listHide">
+                <ul id="menuList">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">My Bookings</a></li>
+                    <li><a href="#">Other Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+
+            <img src="./Source/Content1.jpg" alt="Train Background">
+
+            <article id="fetchTrain">
+
+                <div class="mainBlock">
+                    <form action="#" method="post" id="searchForm">
+                        <h1>BOOK TICKET</h1>
+                        <br>
+                        <span><i class="fa-solid fa-location-arrow"></i></span><input type="text"
+                            placeholder="Source Station">
+                        <span><i class="fa-solid fa-arrow-right-arrow-left rotate"></i></span>
+
+                        <span><i class="fa-solid fa-location-dot"></i></span> <input type="text"
+                            placeholder="Destination Station">
+                        <span><i class="fa-solid fa-calendar-days"></i></span><input type="date" name="date"
+                            id="currentDate">
+                        <br>
+                        <span><i class="fa-solid fa-ticket"></i></span><select name="ticket" id="ticket">
+                            <option value="general">General</option>
+                            <option value="second-class">Second Class</option>
+                            <option value="first-class">First Class</option>
+                            <option value="tatkal">Tatkal</option>
+                        </select>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="reset" value="Reset" style="background-color: rgba(255, 0, 0, 0.7);">
+                        <input type="submit" value="Search">
+                    </form>
+                </div>
+            </article>
+
+        </section>
+        <section id="videoSection">
+            <div>
+                <h1 style="text-align: center; margin: 20px;">About Bullet Train</h1>
+                <p> India's aim to achieve the target of USD 8.4 trillion in terms of the economy by 2030 will make them
+                    the
+                    third-largest economy in the coming 25 years. India has proven its immense ability in other fields,
+                    including space, as a major contributor.
+
+                    The nations which are a part of the high-speed rail network are considered well-developed; now, it's
+                    time
+                    for India to speed up the rate of the Bullet Train Project. This will enhance India's international
+                    stature
+                    and further boost the relationship between India and Japan, leading to more such investments.</p>
+                <ul>
+                    <li><i class="fa-solid fa-angles-right"></i>Employment opportunities: The Mumbai-Ahmedabad
+                        High-Speed Rail Project alone, as estimated, will
+                        generate approximately 4,000 direct jobs. Apart from this, 20,000 indirect jobs will also be
+                        generated along with 20,000 construction workers availing the opportunity of employment till the
+                        commencement of the bullet train.
+
+                    </li>
+                    <li><i class="fa-solid fa-angles-right"></i>The citizens of India have a variety of options to
+                        commute, which includes private transport,
+                        buses, and airlines. To make railways a prime mode of transportation, speed, and comfort,
+                        frequency of operation and punctuality must be enhanced.
+                    </li>
+                </ul>
+            </div>
+
+
+            <div>
+                <video src="./Source/Bullet Train Video.mp4" muted controls preload="auto" autoplay
+                    controlslist="nofullscreen nodownload noremoteplayback noplaybackrate " loop></video>
+            </div>
+
+        </section>
+        <section id="otherService">
+            <br>
+            <br>
+            <div>
+                <h1 style="text-align: center;">Have you not found the right one?<br><br>
+                    Find a service suitable for you here.
+
+                </h1>
+                <ul class="service">
+                    <li><a href=""><i class="fa-solid fa-plane"></i>Flight</a></li>
+                    <li><a href=""><i class="fa-solid fa-train-tram"></i>Charter Train</a></li>
+                    <li><a href=""><i class="fa-solid fa-taxi"></i>Taxi</a></li>
+                    <li><a href=""><i class="fa-solid fa-bed"></i>Hotel</a></li>
+                    <li><a href=""><i class="fa-solid fa-bowl-rice"></i>food</a></li>
+                    <li><a href=""><i class="fa-solid fa-bus"></i>Bus</a></li>
+                    <li><a href=""><i class="fa-solid fa-train-subway"></i>Local Train</a></li>
+                    <li></i><i class="fa-solid fa-umbrella-beach"></i><a href="">Holiday Pack</a></li>
+                    <li><a href=""><i class="fa-solid fa-mountain-city"></i>Hill Package</a></li>
+                    <li><a href=""><i class="fa-regular fa-image"></i>Photos</a></li>
+                </ul>
+            </div>
+            <br>
+            <div style="margin: 20px; box-shadow: 0px 0px 5x 0px;">
+                <img src="./Source/pexels-bopopics-14936961.jpg" alt="Customer service" width="100%" height="220px"
+                    style="border-radius: 10px;">
+            </div>
+            <div id="customerCareContent">
+                <img src="./Logo/LOGO.jpg" alt="Train Logo">
+                <div>
+                    <h1>PBRC Customer Care No: 12345</h1>
+                    <p> PBRC Never ask your Personal Banking information such as Debit / Credit Card / Account Number /
+                        OTP / PIN / CVV
+                        / PAN or Date of Birth or Ask to install any app for Customer Complaint.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="holidayPannel">
+            <h1>Holidays...!</h1>
+            <article class="packageContainer">
+                <div>
+                    <div class="imageView">
+                        <img src="./Holiday/OOTY-1.jpg" alt="Ooty">
+                        <!-- <img src="./Holiday/OOTY-2.jpg" alt="Ooty">
+                        <img src="./Holiday/OOTY-3.jpg" alt="Ooty"> -->
+                    </div>
+                    <div class="textView">
+                        <p>Ooty is a renowned hill station in the state of Tamil Nadu. Often referred to as the "Queen
+                            of Hill Stations," it's nestled in the Nilgiri Hills and is known for its mesmerizing
+                            meadows,
+                            cool weather, and a variety of sightseeing places. Some of the must-visit attractions in
+                            Ooty include the Ooty Lake, Botanical Gardens, and the scenic Avalanche
+                            Lake. The town's economy is largely driven by tourism and agriculture, The town's economy is
+                            largely driven by tourism.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Ooty" target="_blank">Read More <i
+                                class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="imageView ">
+                        <img src="./Holiday/kerala-1.jpg" alt="Kerala">
+                        <!-- <img src="/Holiday/kerala-2.jpg" alt=" Kerala">
+                        <img src="/Holiday/kerala-3.jpg" alt=" Kerala"> -->
+
+                    </div>
+                    <div class="textView">
+                        <p>
+                            Munnar is a captivating hill station located in the Idukki district of Kerala, India. Known
+                            for its sprawling tea plantations, picturesque landscapes, and cool climate, Munnar is a
+                            popular destination for tourists seeking tranquility and natural beauty. Tourism is a
+                            significant part of Kerala's economy, with various experiences offered from the hills to the
+                            backwaters.The journey from these stations to Munnar is scenic and passes through
+                            picturesque landscapes.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Munnar" target="_blank">Read More <i
+                                class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="imageView">
+                        <img src="./Holiday/Goa-1.jpg" alt="Goa">
+                        <!-- <img src="./Holiday/Goa-2.jpg" alt="Goa">
+                        <img src="./Holiday/Goa-3.jpg" alt="Goa"> -->
+
+                    </div>
+                    <div class="textView">
+                        <p>
+                            The state of Goa, in India, is famous for its beaches and places of worship. Tourism is its
+                            primary industry, and is generally focused on the coastal areas of Goa, with decreased
+                            tourist activity inland. Foreign tourists, mostly from Europe, arrive in Goa in winter,
+                            whilst the summer and monsoon
+                            seasons see many Indian tourists. Goa's beaches cover about 125 kilometres (78 mi) of its
+                            coastline. These beaches are divided into North and South Goa.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Tourism_in_Goa" target="_blank">Read More <i
+                                class="fa-solid fa-angles-right"></i></a>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="imageView">
+                        <img src="./Holiday/Ladakh-1.jpg" alt="Ladakh">
+                        <!-- <img src="./Holiday/Ladakh-2.jpg" alt="Ladakh">
+                        <img src="./Holiday/Ladakh-3.jpg" alt="Ladakh"> -->
+
+                    </div>
+                    <div class="textView">
+                        <p>Ladakh is a high-altitude region in northern India. Often referred to as the “land of high
+                            passes,” Ladakh is a land of stark contrasts and diverse landscapes. It is known for its
+                            snow-capped mountains, arid desert, crystal-clear rivers, and ancient Buddhist monasteries.
+                            Ladakh's unique geography and culture have made it a popular destination for travelers
+                            seeking adventure and spiritual enlightenment.Just ahead of Leh Palace, the palace is the
+                            Chamba Temple, a shrine that has a large statue of Maitreya Buddha.
+
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Tourism_in_Ladakh" target="_blank">Read More <i
+                                class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="imageView">
+                        <img src="./Holiday/Kashmir-1.jpg" alt="Kashmir">
+                        <!-- <img src="./Holiday/Kashmir-2.jpg" alt="Kashmir">
+                        <img src="./Holiday/Kashmir-3.jpg" alt="Kashmir"> -->
+
+                    </div>
+                    <div class="textView">
+                        <P>Kashmir is a picturesque location featuring snow-capped mountains, alpine lakes, evergreen
+                            forests and high river valleys. In India and Pakistan it's known as heaven on earth. If you
+                            are touring the Indian-administered part of Kashmir, you may want to choose Srinagar,
+                            the summer capital of Jammu and Kashmir with its beautiful Dal Lake and snow-peaked
+                            mountains all around, as your base.Mountain trekking is popular in the Kashmir region,
+                            especially in Ladakh and Baltistan.</P>
+                        <a href="https://en.wikivoyage.org/wiki/Kashmir" target="_blank">Read More <i
+                                class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="imageView">
+                        <img src="./Holiday/Gujarat-1.jpg" alt="Gujarat">
+                        <!-- <img src="./Holiday/Gujarat-2.jpg" alt="Gujarat">
+                        <img src="./Holiday/Gujarat-3.jpg" alt="Gujarat"> -->
+
+                    </div>
+                    <div class="textView">
+                        <p>
+                            Within Gujarat there are historic forts, palaces, mosques, temples, and places of historical
+                            importance in India's struggle for independence. Many of these palaces and forts have been
+                            converted into heritage hotels to keep tourists close to the history of Gujarat.The Royal
+                            Orient Train is an Indian luxury tourism train that runs between Gujarat and Rajasthan,
+                            covering important tourist locations in the two states.Ahmedabad is a preferred place for
+                            medical tour or medical treatments </p>
+                        <a href="https://en.wikipedia.org/wiki/Tourism_in_Gujarat" target="_blank">Read More <i
+                                class="fa-solid fa-angles-right"></i></a>
+
+                    </div>
+                </div>
+
+            </article>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <article id="social-media">
+            <div>
+                <h3>Get Connected with us on social networks</h3>
+            </div>
+            <div>
+                <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </article>
+        <article id="approvedPartner">
+       <div>
+        <h3>Authorized Partners,</h3>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-google-pay"></i>
+        <i class="fa-brands fa-amazon-pay"></i>
+
+       </div>
+       <div>
+        <p>Copyright Act &copy; 2024 - www.pbrc.in. All Rights Reserved
+            <br>
+            Designed and Hosted by <span><a href="https://www.linkedin.com/in/vikramganesan/" target="_blank">Vikram G</a></span>
+        </p>
+       </div>
+        </article>
+    </footer>
+
+
+
+    <!-- !JavaScript link -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
