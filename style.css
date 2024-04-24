@@ -485,30 +485,35 @@ ul>li {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-#social-media  a:hover, #social-media i:hover {
+#social-media a:hover,
+#social-media i:hover {
     transform: scale(1.2);
 }
-#approvedPartner{
+
+#approvedPartner {
     width: 100%;
     display: flex;
     flex-direction: row;
 }
-#approvedPartner>div{
+
+#approvedPartner>div {
     position: relative;
     bottom: 15px;
     flex-basis: 50%;
     display: flex;
 
 }
-#approvedPartner>div i{
+
+#approvedPartner>div i {
     font-size: 40px;
     margin: 0px 20px;
-    color:#9F9FF9 ;
-    text-shadow: 0px 0px 5px bisque;    
+    color: #9F9FF9;
+    text-shadow: 0px 0px 5px bisque;
 
-    
+
 }
-#approvedPartner>div:nth-child(2){
+
+#approvedPartner>div:nth-child(2) {
     display: flex;
     justify-content: flex-end;
     text-align: end;
@@ -516,8 +521,67 @@ ul>li {
     margin-right: 15px;
 }
 
-#approvedPartner h3{
+#approvedPartner h3 {
     margin-left: 20px;
     font-size: 23px;
-    text-shadow: 0px 0px 5px bisque;    
+    text-shadow: 0px 0px 5px bisque;
+}
+
+/* User Navigation Interaction */
+#stationList {
+    width: 260px;
+    height: 150px;
+    overflow: auto;
+    background-color: rgba(255, 2550, 255, 1);
+    position: absolute;
+    bottom: 153px;
+    left: 17px;
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px;
+    display: none;
+}
+
+.ui-viewStation {
+    padding-bottom: 3px;
+}
+
+.ui-viewStation span {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+
+}
+
+.ui-viewStation::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgba(20, 87, 167, 0);
+}
+
+.ui-viewStation::-webkit-scrollbar-thumb {
+    background-color: #c9c9c9;
+    border-radius: 25px;
+}
+
+.ui-viewStation:hover,
+.ui-viewStation~span:hover {
+    background-color: #97498eb7;
+    color: white;
+    box-shadow: 0px 0px 5px 0px;
+
+}
+#stationList1{
+    width: 260px;
+    height: 150px;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    bottom: 60px;
+    left: 17px;
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px;
+    display: none;
 }
