@@ -55,17 +55,17 @@
                     <form action="#" method="post" id="searchForm">
                         <h1>BOOK TICKET</h1>
                         <br>
-                        <span><i class="fa-solid fa-location-arrow"></i><input type="text" id="source-station" placeholder="Source Station"
-                                list="stations">
+                        <span><i class="fa-solid fa-location-arrow"></i><input type="text" id="source-station"
+                                placeholder="Source Station" list="stations">
                         </span>
                         <span><i class="fa-solid fa-arrow-right-arrow-left rotate"></i></span>
 
-                        <span><i class="fa-solid fa-location-dot"></i><input   type="text" id="destination-station" 
+                        <span><i class="fa-solid fa-location-dot"></i><input type="text" id="destination-station"
                                 placeholder="Destination Station" list="stations">
                         </span>
-            
 
-                        
+
+
                         </select>
                         <!-- <datalist id="stations">
                             <option value="Delhi">New Delhi</option>
@@ -74,22 +74,46 @@
                             <option value="Chennai">Tamilnadu</option>
                             <option value="Cochin">Kerala</option>
                         </datalist> -->
-                            <div id="stationList" class="ui-viewStation" >
+                        <div id="stationList" class="ui-viewStation">
 
-                                <ul role="listbox" id="Stations"  > 
-                                    <li role="option"  class="ui-viewStation" style="cursor: not-allowed;"><span>----Stations----</span></li>
-                                    <li role="option"  class="ui-viewStation"><span value="New Delhi">New Delhi <br> Delhi</span></li>
-                                    <li role="option"  class="ui-viewStation" ><span value="Lokmanya Tilak" >Lokmanya Tilak <br> Mumbai </span></li>
-                                    <li role="option"  class="ui-viewStation" ><span  value="Bengaluru">Bengaluru</span><span>Karnatka</span></li>
-                                    <li role="option"  class="ui-viewStation"  ><span value="Chennai">Chennai</span><span>Tamilnadu</span></li>
-                                    <li role="option"  class="ui-viewStation"  ><span value="Cochin">Cochin</span><span>Kerala</span></li>
+                            <ul role="listbox" id="Stations">
+                                <li role="option" class="ui-viewStation" style="cursor: not-allowed;">
+                                    <span>----Stations----</span>
+                                </li>
+                                <li role="option" class="ui-viewStation"><span value="New Delhi">New Delhi <br>
+                                        Delhi</span></li>
+                                <li role="option" class="ui-viewStation"><span value="Lokmanya Tilak">Lokmanya Tilak
+                                        <br> Mumbai </span></li>
+                                <li role="option" class="ui-viewStation"><span
+                                        value="Bengaluru">Bengaluru</span><span>Karnatka</span></li>
+                                <li role="option" class="ui-viewStation"><span
+                                        value="Chennai">Chennai</span><span>Tamilnadu</span></li>
+                                <li role="option" class="ui-viewStation"><span
+                                        value="Cochin">Cochin</span><span>Kerala</span></li>
 
-                                </ul>
-                            </div>
-                        
+                            </ul>
+                        </div>
+                        <div id="stationList1" class="ui-viewStation">
 
+                            <ul role="listbox" id="Stations">
+                                <li role="option" class="ui-viewStation" style="cursor: not-allowed;">
+                                    <span>----Stations----</span>
+                                </li>
+                                <li role="option" class="ui-viewStation"><span value="New Delhi">New Delhi <br>
+                                        Delhi</span></li>
+                                <li role="option" class="ui-viewStation"><span value="Lokmanya Tilak">Lokmanya Tilak
+                                        <br> Mumbai </span></li>
+                                <li role="option" class="ui-viewStation"><span
+                                        value="Bengaluru">Bengaluru</span><span>Karnatka</span></li>
+                                <li role="option" class="ui-viewStation"><span
+                                        value="Chennai">Chennai</span><span>Tamilnadu</span></li>
+                                <li role="option" class="ui-viewStation"><span
+                                        value="Cochin">Cochin</span><span>Kerala</span></li>
+
+                            </ul>
+                        </div>
                         <span><i class="fa-solid fa-calendar-days"></i></span><input type="date" name="date"
-                            id="currentDate">
+                            id="currentDate" value="">
                         <br>
                         <span><i class="fa-solid fa-ticket"></i></span><select name="ticket" id="ticket">
                             <option value="general">General</option>
@@ -140,7 +164,7 @@
 
             <div>
                 <video src="./Source/Bullet Train Video.mp4" muted controls loop preload="auto" autoplay
-                    controlslist="nofullscreen nodownload noremoteplayback noplaybackrate " ></video>
+                    controlslist="nofullscreen nodownload noremoteplayback noplaybackrate "></video>
             </div>
 
         </section>
@@ -335,13 +359,15 @@
 
             </div>
             <div>
-                <p>Copyright Act &copy; 2024 - www.pbrc.in. All Rights Reserved
+                <p>Copyright Act &copy;
+                    <script>document.write((new Date()).getFullYear())</script> - www.pbrc.in. All Rights Reserved
                     <br>
                     Designed and Hosted by <span><a href="https://www.linkedin.com/in/vikramganesan/"
                             target="_blank">Vikram G</a></span>
                 </p>
             </div>
         </article>
+        <!-- <script>document.write( (new Date()).getDate()+"/"+new Date().getMonth()+"/"+new Date().getFullYear())</script> -->
     </footer>
 
 
