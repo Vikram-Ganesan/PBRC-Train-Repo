@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Arbutus&family=Audiowide&family=Oregano:ital@0;1&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+
+}
+
+body {
+    /* background-image: url(./Source/Content.jpg); */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -18,25 +28,30 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 90px;
     display: flex;
-    justify-self: flex-start;
-    margin: 5px 60px;
+    align-items: center;
+    justify-items: auto;
+    margin: 15px 30px;
+
 }
 
 #login-head>img {
-    height: 90px;
+    height: 140px;
     filter: drop-shadow(0px 0px 2px rgba(0, 0, 255, 0.5));
 }
 
 #login-head>h1 {
     height: 90px;
-    font-size: 50px;
-    margin-left: 150px;
+    margin-left: 10px;
+    font-size: 35px;
+    font-family: "Arbutus", cursive;
+    font-weight: 300;
+    font-style: normal;
 
 }
 
 .form-container {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
 }
@@ -46,22 +61,37 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     border-bottom-right-radius: 100%;
-    position: relative;
     margin-right: 2.5px;
+    background-color: #5995fd;
 }
 
-.signUp-text>img{
-    opacity: 0.3;
-    position: absolute;
-    border-bottom-right-radius: 100%;
-    width: 100%;
-    height: 80vh;
-    z-index: 0;
+.textContent {
+    width: 55%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 40px;
 }
-.signUp-text h1, p{
-    position: absolute;
-    z-index: 2;
-/* color: wheat;     */
+
+.textContent>h4 {
+    margin: 10px;
+    font-family: "Alice";
+    font-size: 24px;
+    color: white;
+}
+
+.textContent>button {
+    padding: 10px;
+    border-radius: 20px;
+    width: 100px;
+    /* background-color: transparent; */
+    border: 2px solid white;
+}
+
+.textContent>button:hover {
+    background-color: #5995fd;
 }
 
 .form-signup {
@@ -69,23 +99,32 @@ body::-webkit-scrollbar-thumb {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
+
 #form {
     display: flex;
     flex-direction: column;
 }
-#form input{
+
+#form input {
     width: 300px;
     height: 35px;
     border-radius: 50px;
-    border: 2px solid #c9c9c9;
+    /* border: 2px solid #c9c9c9; */
+    border: none;
     padding: 10px;
     margin-top: 10px;
     background-color: rgba(204, 204, 204, 0.5);
 }
-#form>input::placeholder{
+
+#form input:focus {
+    border: 2px solid #5995fd;
+    outline: none;
+}
+
+#form>input::placeholder {
     justify-content: center;
     align-content: center;
+    font-family: "Audiowide";
 }
