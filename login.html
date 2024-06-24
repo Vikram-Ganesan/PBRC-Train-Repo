@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PBRC - User Login</title>
     <link rel="stylesheet" href="./loginDesign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
-    <section class="form-container">
-        <aside class="signUp-text">
+    <section class="form-container ">
+        <aside class="signUp-text hideForm" >
 
             <div id="login-head">
                 <img src="./Logo/Logo -fav.png" alt="PBRC LOGO">
@@ -19,26 +22,59 @@
 
             </div>
             <div class="textContent">
-                <h4>If you already have an account, please log in with your existing account to explore more...</h4>
-                <button type="button" value="Signin">Sign in</button>
+                <h4>Have an account?<br> Please log in with your existing account to explore more...</h4>
+                <span>⬇️</span>
+                <button type="button" value="Signin" id="signbtn">Sign in</button>
             </div>
         </aside>
-        <aside class="form-signup">
+        <aside class="form-signup signupform hideForm">
             <h1>Enter Your Details</h1><br>
-            <form action="#" method="post" id="form">
-                <input type="text" name="" id="" placeholder="Full Name">
-                <input type="email" name="" id="" placeholder="Email ID">
-                <input type="tel" name="" id="" placeholder="Contact Number">
-                <input type="text" name="" id="" placeholder="Enter Password">
-                <input type="text" name="" id="" placeholder="Retype Password again">
+            <form action="#" method="post" class="form">
+                <span><i class="fa-solid fa-user"></i><input type="text" name="name" id="name" placeholder="Full Name"
+                        autocomplete="off"></span>
+                <span><i class="fa-regular fa-envelope"></i><input type="email" name="email" id="email"
+                        placeholder="Email ID" autocomplete="off"></span>
+                <span><i class="fa-solid fa-phone"></i><input type="tel" name="contact" id="contact"
+                        placeholder="Contact Number" autocomplete="off"></span>
+                <span><i class="fa-solid fa-lock"></i><input type="password" name="password1" id="password1"
+                        placeholder="Enter Password" autocomplete="off"></span>
+                <span><i class="fa-solid fa-lock"></i><input type="password" name="password2" id="password2"
+                        placeholder="Enter Password Again" autocomplete="off"></span>
+                <input type="submit" value="Signup" class="btnsubmit">
             </form>
         </aside>
     </section>
 
-    <section>
+    <section class="form-container signform ">
+        <aside class="form-signin">
+            <h1>Enter Your Details</h1><br>
+            <form action="" class="form">
+                <span><i class="fa-regular fa-envelope"></i><input type="email" name="email" id="email-login"
+                    placeholder="Email ID" autocomplete="off"></span>
+
+            <span><i class="fa-solid fa-lock"></i><input type="password" name="password1" id="password"
+                    placeholder="Enter Password" autocomplete="off"></span>
+                    <input type="submit" value="Signin" class="btnsubmit" >
+
+
+            </form>
+        </aside>
+        <aside class="signin-text">
+
+            <div id="login-head">
+               
+                <h1>PBRC User Login</h1>
+                <img src="./Logo/Logo -fav.png" alt="PBRC LOGO">
+
+            </div>
+            <div class="textContent" id="textContent">
+                <h4> Don't have an account?<br> Please click here to create an account to proceed further...</h4>
+                <span>⬇️</span>
+                <button type="button" value="signUp" id="signUp">Sign Up</button>
+            </div>
+        </aside>
 
     </section>
-
 
 
 
